@@ -12,8 +12,8 @@
     --faint:       #2A2E35;
     --bdr:         rgba(255, 255, 255, 0.06);
     --bdr-h:       rgba(255, 255, 255, 0.12);
-    /* Accent Palette — Dark Matte Green Primary */
-    --c-primary: #1b4b3c;  /* Dark Matte Sage/Green */
+    /* Accent Palette — Vibrant Emerald Primary */
+    --c-primary: #10b981;  /* Emerald 500 */
     --c-blue:    #3b82f6;  /* Blue */
     --c-violet:  #8b5cf6;  /* Violet */
     --c-teal:    #14b8a6;  /* Teal */
@@ -22,9 +22,9 @@
 
     /* Legacy hi/hi-alt now pointing to primary accent */
     --hi:          var(--c-primary);
-    --hi-alt:      #266e57;
+    --hi-alt:      #059669; /* Emerald 600 */
     --inv:         #131518;
-    --accent:      rgba(27, 75, 60, 0.15);
+    --accent:      rgba(16, 185, 129, 0.15);
 
     --font: 'Inter', system-ui, sans-serif;
     --mono: 'Space Mono', monospace;
@@ -46,17 +46,17 @@
     --sh:      rgba(42, 44, 48, 0.06);
 
     /* Accents for light mode */
-    --c-primary: #1f3b30; /* Very Dark Matte Green/Charcoal */
-    --c-blue:    #314461;
-    --c-violet:  #535D6A;
-    --c-teal:    #66574D;
-    --c-amber:   #7A6655;
-    --c-rose:    #263242;
+    --c-primary: #059669; /* Emerald 600 */
+    --c-blue:    #2563eb; /* Blue 600 */
+    --c-violet:  #7c3aed; /* Violet 600 */
+    --c-teal:    #0d9488; /* Teal 600 */
+    --c-amber:   #d97706; /* Amber 600 */
+    --c-rose:    #e11d48; /* Rose 600 */
 
     --hi:        var(--c-primary);
-    --hi-alt:    #152820;
+    --hi-alt:    #047857; /* Emerald 700 */
     --inv:       #F3F1EC;
-    --accent:    rgba(31, 59, 48, 0.08);
+    --accent:    rgba(5, 150, 105, 0.08);
 }
 
 /* RESET */
@@ -185,8 +185,8 @@ header,main,footer { position:relative; z-index:2; }
     transition:transform .3s var(--ease), background .3s;
 }
 input:checked + .tog-pill::before { transform: translateX(30px); }
-input:checked + .tog-pill .bx-moon { color:var(--text); }
-.tog-pill .bx-sun { color:var(--text); }
+input:checked + .tog-pill .bx-moon { color:#ffffff; }
+.tog-pill .bx-sun { color:#ffffff; }
 input:checked + .tog-pill .bx-sun { color:var(--dim); }
 
 .burger { display:none; flex-direction:column; gap:5px; padding:4px; }
