@@ -1,809 +1,648 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aditya Sharma — Developer</title>
-    <meta
-      name="description"
-      content="Aditya Sharma — CS Student & Developer. Crafting software from systems to experiences."
-    />
 
-    <!-- Inter: Premium, legible, modern -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- ══ GRAIN OVERLAY ══ -->
-    <div class="grain"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Sharma — Developer</title>
+  <meta name="description"
+    content="Aditya Sharma — CS Student & Developer. Crafting software from systems to experiences." />
 
-    <!-- ══ AMBIENT BACKGROUND ══ -->
-    <div class="ambient-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
+  <!-- Inter: Premium, legible, modern -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ══ GRAIN OVERLAY ══ -->
+  <div class="grain"></div>
+
+  <!-- ══ AMBIENT BACKGROUND ══ -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ══ SCROLL PROGRESS ══ -->
+  <div class="sprog" id="sprog"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-wrap">
+      <a href="#hero" class="nav-logo">AS</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nl">About</a>
+        <a href="#skills" class="nl">Skills</a>
+        <a href="#projects" class="nl">Work</a>
+        <a href="#certificates" class="nl">Certificates</a>
+        <a href="#education" class="nl">Education</a>
+        <a href="#contact" class="nl">Contact</a>
+      </nav>
+      <div class="nav-end">
+        <a href="https://drive.google.com/file/d/1ttrz_ac1Xf0EDqBrLLNU-7Id9yhJumtN/view?usp=sharing" target="_blank"
+          class="nav-cv-btn">Download CV <i class="bx bx-download"></i></a>
+        <label class="tog" title="Theme">
+          <input type="checkbox" id="themeChk" />
+          <span class="tog-pill">
+            <i class="bx bx-sun"></i>
+            <i class="bx bx-moon"></i>
+          </span>
+        </label>
+        <button class="burger" id="burger"><span></span><span></span></button>
+      </div>
     </div>
+    <div class="nav-drawer" id="drawer">
+      <a href="#about" class="dl">About</a>
+      <a href="#skills" class="dl">Skills</a>
+      <a href="#projects" class="dl">Work</a>
+      <a href="#certificates" class="dl">Certificates</a>
+      <a href="#education" class="dl">Education</a>
+      <a href="#contact" class="dl">Contact</a>
+      <a href="https://drive.google.com/file/d/1ttrz_ac1Xf0EDqBrLLNU-7Id9yhJumtN/view?usp=sharing" target="_blank"
+        class="dl dl-cv">Download CV <i class="bx bx-download"></i></a>
+    </div>
+  </header>
 
-    <!-- ══ SCROLL PROGRESS ══ -->
-    <div class="sprog" id="sprog"></div>
+  <main>
+    <!-- ══════ HERO ══════ -->
+    <section id="hero" class="sec-hero">
+      <div class="wrap hero-wrap">
+        <div class="hero-left">
 
-    <!-- ══ NAVBAR ══ -->
-    <header class="nav" id="nav">
-      <div class="wrap nav-wrap">
-        <a href="#hero" class="nav-logo">AS</a>
-        <nav class="nav-links" id="navLinks">
-          <a href="#about" class="nl">About</a>
-          <a href="#skills" class="nl">Skills</a>
-          <a href="#projects" class="nl">Work</a>
-          <a href="#certificates" class="nl">Certificates</a>
-          <a href="#achievements" class="nl">Achievements</a>
-          <a href="#education" class="nl">Education</a>
-          <a href="#contact" class="nl">Contact</a>
-        </nav>
-        <div class="nav-end">
-          <label class="tog" title="Theme">
-            <input type="checkbox" id="themeChk" />
-            <span class="tog-pill">
-              <i class="bx bx-sun"></i>
-              <i class="bx bx-moon"></i>
-            </span>
-          </label>
-          <button class="burger" id="burger"><span></span><span></span></button>
+          <h1 class="hero-h1">
+            <span class="hero-greeting reveal-up">Hello, I am</span>
+            <span class="reveal-up">Aditya</span>
+            <span class="reveal-up delay1">Sharma</span>
+          </h1>
+          <p class="hero-sub reveal-up delay2">
+            I build things: from low-level <strong>C++ systems</strong> to
+            <strong>game worlds</strong>, cloud infra, and AI-powered
+            interfaces. Clean code, sharp thinking.
+          </p>
+          <div class="hero-btns reveal-up delay3">
+            <a href="#projects" class="btn-fill">See My Work <i class="bx bx-right-arrow-alt"></i></a>
+            <a href="#contact" class="btn-line">Get in Touch</a>
+          </div>
+          <div class="hero-socials reveal-up delay4">
+            <a href="https://github.com/peedasaur" target="_blank" class="hs"><i class="bx bxl-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/aditya-sharma-501210341" target="_blank" class="hs"><i
+                class="bx bxl-linkedin"></i> LinkedIn</a>
+            <a href="mailto:aditya.sharma7364@gmail.com" class="hs"><i class="bx bx-envelope"></i> Email</a>
+          </div>
+        </div>
+        <div class="hero-right reveal-up delay2">
+          <div class="av">
+            <div class="av-ring r1"></div>
+            <div class="av-ring r2"></div>
+            <div class="av-float-wrap">
+              <div class="av-core">
+                <img src="assets/pfp.png?v=11" class="av-img-base" alt="Aditya Sharma" />
+              </div>
+              <div class="av-pop-wrap">
+                <img src="assets/pfp.png?v=11" class="av-img-pop" alt="" aria-hidden="true" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="nav-drawer" id="drawer">
-        <a href="#about" class="dl">About</a>
-        <a href="#skills" class="dl">Skills</a>
-        <a href="#projects" class="dl">Work</a>
-        <a href="#certificates" class="dl">Certificates</a>
-        <a href="#achievements" class="dl">Achievements</a>
-        <a href="#education" class="dl">Education</a>
-        <a href="#contact" class="dl">Contact</a>
+      <div class="hero-scroll">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>scroll</span>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- ══════ HERO ══════ -->
-      <section id="hero" class="sec-hero">
-        <div class="wrap hero-wrap">
-          <div class="hero-left">
-            <p class="hero-eyebrow reveal-up">
-              <span class="eyebrow-tick"></span> CS Student &amp; Developer
-            </p>
-            <h1 class="hero-h1">
-              <span class="reveal-up">Aditya</span>
-              <span class="reveal-up delay1">Sharma</span>
-            </h1>
-            <p class="hero-sub reveal-up delay2">
-              I build things: from low-level <strong>C++ systems</strong> to
-              <strong>game worlds</strong>, cloud infra, and AI-powered
-              interfaces. Clean code, sharp thinking.
-            </p>
-            <div class="hero-btns reveal-up delay3">
-              <a href="#projects" class="btn-fill"
-                >See My Work <i class="bx bx-right-arrow-alt"></i
-              ></a>
-              <a href="#contact" class="btn-line">Get in Touch</a>
-            </div>
-            <div class="hero-socials reveal-up delay4">
-              <a href="https://github.com/peedasaur" target="_blank" class="hs"
-                ><i class="bx bxl-github"></i> GitHub</a
-              >
-              <a
-                href="https://linkedin.com/in/aditya-sharma-501210341"
-                target="_blank"
-                class="hs"
-                ><i class="bx bxl-linkedin"></i> LinkedIn</a
-              >
-              <a href="mailto:aditya.sharma7364@gmail.com" class="hs"
-                ><i class="bx bx-envelope"></i> Email</a
-              >
-            </div>
-          </div>
-          <div class="hero-right reveal-up delay2">
-            <div class="av">
-              <div class="av-ring r1"></div>
-              <div class="av-ring r2"></div>
-              <div class="av-core">AS</div>
-            </div>
-          </div>
+    <div class="sep"></div>
+
+    <!-- ══════ ABOUT ══════ -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="sec-h2 reveal-up">About</h2>
+        <div class="about-content">
+          <p class="reveal-up delay1">
+            Hi, I’m Aditya — a B.Tech Computer Science student at LPU. I’m fascinated by what happens behind the screen: from how compilers optimize performance to how physics engines bring games to life. For me, coding is about building scalable solutions and crafting digital experiences people actually love to use.
+          </p>
+          <br />
+          <p class="reveal-up delay2">
+            Whether I'm writing <strong>systems-level C++</strong>, designing games in <strong>Unity</strong>, or deploying on <strong>AWS</strong>, I thrive on turning complex problems into elegant logic. Outside of class, I compete in coding contests and am always eager to learn, build, and collaborate on exciting new tech!
+          </p>
         </div>
-        <div class="hero-scroll">
-          <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-          <span>scroll</span>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="sep"></div>
+    <div class="sep"></div>
 
-      <!-- ══════ ABOUT ══════ -->
-      <section id="about" class="section">
-        <div class="wrap">
-          <h2 class="sec-h2 reveal-up">About</h2>
-          <div class="about-content">
-            <p class="reveal-up delay1">
-              I'm a B.Tech Computer Science student at Lovely Professional
-              University, driven by genuine curiosity — how compilers work, how
-              games feel alive, how cloud services scale to millions.
-            </p>
-            <br />
-            <p class="reveal-up delay2">
-              My toolkit spans <strong>systems-level C++</strong> to
-              <strong>Unity game dev</strong> to
-              <strong>AWS infrastructure</strong>. I compete in coding contests,
-              build DSA libraries, and design interactive experiences.
-            </p>
-          </div>
-        </div>
-      </section>
+    <div class="sep"></div>
 
-      <div class="sep"></div>
-
-      <div class="sep"></div>
-
-      <!-- ══════ SKILLS ══════ -->
-      <section id="skills" class="section">
-        <div class="wrap">
-          <h2 class="sec-h2 reveal-up">Skills</h2>
-          <div class="sk-grid">
-            <div>
-              <h3 class="sk-cat reveal-up">
-                <i class="bx bx-code-alt"></i> Languages
-              </h3>
-              <div class="bars">
-                <div class="bar-row reveal-up delay1">
-                  <span>C++</span>
-                  <div class="bar">
-                    <div class="bar-fill" data-w="90"></div>
-                  </div>
-                  <span class="mono sm">Expert</span>
+    <!-- ══════ SKILLS ══════ -->
+    <section id="skills" class="section">
+      <div class="wrap">
+        <h2 class="sec-h2 reveal-up">Skills</h2>
+        <div class="sk-grid">
+          <div>
+            <h3 class="sk-cat reveal-up">
+              <i class="bx bx-code-alt"></i> Languages
+            </h3>
+            <div class="bars">
+              <div class="bar-row reveal-up delay1">
+                <span>C++</span>
+                <div class="bar">
+                  <div class="bar-fill" data-w="90"></div>
                 </div>
-                <div class="bar-row reveal-up delay2">
-                  <span>C</span>
-                  <div class="bar">
-                    <div class="bar-fill" data-w="65"></div>
-                  </div>
-                  <span class="mono sm">Intermediate</span>
-                </div>
-                <div class="bar-row reveal-up delay3">
-                  <span>C#</span>
-                  <div class="bar">
-                    <div class="bar-fill" data-w="75"></div>
-                  </div>
-                  <span class="mono sm">Proficient</span>
-                </div>
-                <div class="bar-row reveal-up delay1">
-                  <span>Python</span>
-                  <div class="bar">
-                    <div class="bar-fill" data-w="65"></div>
-                  </div>
-                  <span class="mono sm">Intermediate</span>
-                </div>
-                <div class="bar-row reveal-up delay2">
-                  <span>Java</span>
-                  <div class="bar">
-                    <div class="bar-fill" data-w="90"></div>
-                  </div>
-                  <span class="mono sm">Expert</span>
-                </div>
-                <div class="bar-row reveal-up delay3">
-                  <span>JS</span>
-                  <div class="bar">
-                    <div class="bar-fill" data-w="72"></div>
-                  </div>
-                  <span class="mono sm">Proficient</span>
-                </div>
+                <span class="mono sm">Expert</span>
               </div>
-            </div>
-            <div>
-              <h3 class="sk-cat reveal-up">
-                <i class="bx bx-wrench"></i> Tools
-              </h3>
-              <div class="tool-chips">
-                <span class="tc reveal-up delay1"
-                  ><i class="bx bxs-data"></i>MySQL</span
-                >
-                <span class="tc reveal-up delay2"
-                  ><i class="bx bxl-aws"></i>AWS</span
-                >
-                <span class="tc reveal-up delay3"
-                  ><i class="bx bxl-tux"></i>Linux</span
-                >
-                <span class="tc reveal-up delay1"
-                  ><i class="bx bxl-blender"></i>Blender</span
-                >
-                <span class="tc reveal-up delay2"
-                  ><i class="bx bx-joystick"></i>Unreal Engine 5</span
-                >
-                <span class="tc reveal-up delay3"
-                  ><i class="bx bxl-unity"></i>Unity</span
-                >
-                <span class="tc reveal-up delay1"
-                  ><i class="bx bx-ghost"></i>Godot</span
-                >
-                <span class="tc reveal-up delay2"
-                  ><i class="bx bx-send"></i>Postman</span
-                >
-                <span class="tc reveal-up delay3"
-                  ><i class="bx bxl-docker"></i>Docker</span
-                >
-                <span class="tc reveal-up delay1"
-                  ><i class="bx bxl-github"></i>GitHub</span
-                >
-                <span class="tc reveal-up delay2"
-                  ><i class="bx bx-cat"></i>Scratch</span
-                >
+              <div class="bar-row reveal-up delay2">
+                <span>C</span>
+                <div class="bar">
+                  <div class="bar-fill" data-w="65"></div>
+                </div>
+                <span class="mono sm">Intermediate</span>
               </div>
-              <h3 class="sk-cat mt reveal-up">
-                <i class="bx bx-brain"></i> Soft Skills
-              </h3>
-              <div class="pills">
-                <span class="pill">Problem Solving</span>
-                <span class="pill">Pattern Recognition</span>
-                <span class="pill">Persistence</span>
-                <span class="pill">Attention to Detail</span>
-                <span class="pill">Discipline</span>
+              <div class="bar-row reveal-up delay3">
+                <span>C#</span>
+                <div class="bar">
+                  <div class="bar-fill" data-w="75"></div>
+                </div>
+                <span class="mono sm">Proficient</span>
+              </div>
+              <div class="bar-row reveal-up delay1">
+                <span>Python</span>
+                <div class="bar">
+                  <div class="bar-fill" data-w="65"></div>
+                </div>
+                <span class="mono sm">Intermediate</span>
+              </div>
+              <div class="bar-row reveal-up delay2">
+                <span>Java</span>
+                <div class="bar">
+                  <div class="bar-fill" data-w="90"></div>
+                </div>
+                <span class="mono sm">Expert</span>
+              </div>
+              <div class="bar-row reveal-up delay3">
+                <span>JS</span>
+                <div class="bar">
+                  <div class="bar-fill" data-w="72"></div>
+                </div>
+                <span class="mono sm">Proficient</span>
               </div>
             </div>
           </div>
+          <div>
+            <h3 class="sk-cat reveal-up">
+              <i class="bx bx-wrench"></i> Tools
+            </h3>
+            <div class="tool-chips">
+              <span class="tc reveal-up delay1"><i class="bx bxs-data"></i>MySQL</span>
+              <span class="tc reveal-up delay2"><i class="bx bxl-aws"></i>AWS</span>
+              <span class="tc reveal-up delay3"><i class="bx bxl-tux"></i>Linux</span>
+              <span class="tc reveal-up delay1"><i class="bx bxl-blender"></i>Blender</span>
+              <span class="tc reveal-up delay2"><i class="bx bx-joystick"></i>Unreal Engine 5</span>
+              <span class="tc reveal-up delay3"><i class="bx bxl-unity"></i>Unity</span>
+              <span class="tc reveal-up delay1"><i class="bx bx-ghost"></i>Godot</span>
+              <span class="tc reveal-up delay2"><i class="bx bx-send"></i>Postman</span>
+              <span class="tc reveal-up delay3"><i class="bx bxl-docker"></i>Docker</span>
+              <span class="tc reveal-up delay1"><i class="bx bxl-github"></i>GitHub</span>
+              <span class="tc reveal-up delay2"><i class="bx bx-cat"></i>Scratch</span>
+              <span class="tc reveal-up delay3"><i class="bx bxl-nodejs"></i>Node.js</span>
+              <span class="tc reveal-up delay1"><i class="bx bxl-react"></i>React</span>
+              <span class="tc reveal-up delay2"><i class="bx bxs-video"></i>After Effects</span>
+              <span class="tc reveal-up delay3"><i class="bx bxl-android"></i>Android Studio</span>
+            </div>
+            <h3 class="sk-cat mt reveal-up">
+              <i class="bx bx-brain"></i> Soft Skills
+            </h3>
+            <div class="pills">
+              <span class="pill">Problem Solving</span>
+              <span class="pill">Pattern Recognition</span>
+              <span class="pill">Persistence</span>
+              <span class="pill">Time Management</span>
+              <span class="pill">Discipline</span>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <div class="sep"></div>
+    <div class="sep"></div>
 
-      <div class="sep"></div>
+    <div class="sep"></div>
 
-      <!-- ══════ WORK ══════ -->
-      <section id="projects" class="section alt">
-        <div class="wrap">
-          <h2 class="sec-h2 reveal-up">Projects</h2>
-          <div class="proj-grid">
-            <!-- 1. foodiexpress -->
-            <article class="pcard reveal-up delay1" data-tilt>
-              <div class="pcard-img">
-                <img
-                  src="assets/projects/proj0.png"
-                  alt="FoodiExpress"
-                  style="
+    <!-- ══════ WORK ══════ -->
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <h2 class="sec-h2 reveal-up">Projects</h2>
+        <div class="proj-grid">
+          <!-- 1. DETOX Chrome Extension -->
+          <article class="pcard reveal-up delay1" data-tilt>
+            <div class="pcard-img">
+              <img src="assets/projects/proj0.png" alt="DETOX Chrome Extension" style="
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     object-position: top;
-                  "
-                />
-                <div class="pcard-overlay">
-                  <a
-                    href="https://github.com/peedasaur/foodiexpress"
-                    target="_blank"
-                    class="pca"
-                    ><i class="bx bxl-github"></i> Code</a
-                  >
-                </div>
-                <span
-                  class="pcard-tag mono"
-                  style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)"
-                  >Fullstack</span
-                >
+                  " />
+              <div class="pcard-overlay">
+                <a href="https://github.com/peedasaur/DETOX-Chrome-Extension-" target="_blank" class="pca"><i
+                    class="bx bxl-github"></i> Code</a>
               </div>
-              <div class="pcard-body">
-                <h3>foodiexpress</h3>
-                <p>
-                  MERN stack food delivery system. Features user authentication,
-                  cart management, and order tracking.
-                </p>
-                <div class="pcard-stack">
-                  <span>MERN</span><span>React</span><span>Web</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 2. public-safety-advisor -->
-            <article class="pcard reveal-up delay2" data-tilt>
-              <div class="pcard-img">
-                <img
-                  src="assets/projects/proj2.png"
-                  alt="Public Safety Advisor"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
-                <div class="pcard-overlay">
-                  <a
-                    href="https://github.com/peedasaur/public-safety-advisor"
-                    target="_blank"
-                    class="pca"
-                    ><i class="bx bxl-github"></i> Code</a
-                  >
-                </div>
-                <span
-                  class="pcard-tag mono"
-                  style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)"
-                  >AI Chatbot</span
-                >
-              </div>
-              <div class="pcard-body">
-                <h3>Public Safety Advisor</h3>
-                <p>
-                  A simple chatbot built to give safety tips, report incidents,
-                  and advice to the public.
-                </p>
-                <div class="pcard-stack">
-                  <span>Python</span><span>AI</span><span>Chatbot</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 3. Doctor-appointment -->
-            <article class="pcard reveal-up delay3" data-tilt>
-              <div class="pcard-img">
-                <img
-                  src="assets/projects/proj5.jpg"
-                  alt="CarePulse Doctor Appointment"
-                  style="
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: top;
-                  "
-                />
-                <div class="pcard-overlay">
-                  <a
-                    href="https://github.com/peedasaur/Doctor-appointment"
-                    target="_blank"
-                    class="pca"
-                    ><i class="bx bxl-github"></i> Code</a
-                  >
-                </div>
-                <span
-                  class="pcard-tag mono"
-                  style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)"
-                  >Health</span
-                >
-              </div>
-              <div class="pcard-body">
-                <h3>Doctor Appointments</h3>
-                <p>
-                  Medical appointment management system to seamlessly find and
-                  book expert healthcare professionals.
-                </p>
-                <div class="pcard-stack">
-                  <span>React</span><span>Next.js</span><span>Node.js</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 4. Movie-Booking -->
-            <article class="pcard reveal-up delay1" data-tilt>
-              <div class="pcard-img">
-                <img
-                  src="assets/projects/proj4.png"
-                  alt="Cine Book"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
-                <div class="pcard-overlay">
-                  <a
-                    href="https://github.com/peedasaur/Movie-Booking"
-                    target="_blank"
-                    class="pca"
-                    ><i class="bx bxl-github"></i> Code</a
-                  >
-                </div>
-                <span
-                  class="pcard-tag mono"
-                  style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)"
-                  >Entertainment</span
-                >
-              </div>
-              <div class="pcard-body">
-                <h3>CineBook Movies</h3>
-                <p>
-                  Sleek ticket booking interface for movies with seat selection
-                  and beautiful modern UI.
-                </p>
-                <div class="pcard-stack">
-                  <span>React</span><span>Vite</span><span>UI/UX</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 5. Sand-simulator -->
-            <article class="pcard reveal-up delay2" data-tilt>
-              <div class="pcard-img">
-                <img
-                  src="assets/projects/proj1.png"
-                  alt="Sand Simulator"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
-                <div class="pcard-overlay">
-                  <a
-                    href="https://github.com/peedasaur/Sand-simulator"
-                    target="_blank"
-                    class="pca"
-                    ><i class="bx bxl-github"></i> Code</a
-                  >
-                </div>
-                <span
-                  class="pcard-tag mono"
-                  style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)"
-                  >Physics Engine</span
-                >
-              </div>
-              <div class="pcard-body">
-                <h3>Sand Simulator</h3>
-                <p>
-                  A minimal website using OpenGL to accurately simulate
-                  interactive sand physics in the browser.
-                </p>
-                <div class="pcard-stack">
-                  <span>JavaScript</span><span>WebGL</span><span>Canvas</span>
-                </div>
-              </div>
-            </article>
-
-            <!-- 6. NEON-PONG-Unity-Game- -->
-            <article class="pcard reveal-up delay3" data-tilt>
-              <div class="pcard-img">
-                <img
-                  src="assets/projects/proj3.png"
-                  alt="NEON PONG"
-                  style="width: 100%; height: 100%; object-fit: cover"
-                />
-                <div class="pcard-overlay">
-                  <a
-                    href="https://github.com/peedasaur/NEON-PONG-Unity-Game-"
-                    target="_blank"
-                    class="pca"
-                    ><i class="bx bxl-github"></i> Code</a
-                  >
-                </div>
-                <span
-                  class="pcard-tag mono"
-                  style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)"
-                  >Game</span
-                >
-              </div>
-              <div class="pcard-body">
-                <h3>Neon Pong</h3>
-                <p>
-                  Modern arcade Pong clone built with Unity Engine featuring
-                  vivid post-processing visual fx.
-                </p>
-                <div class="pcard-stack">
-                  <span>Unity</span><span>C#</span><span>Gamedev</span>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div
-            class="view-more-wrap reveal-up delay4"
-            style="text-align: center; margin-top: 50px"
-          >
-            <a
-              href="https://github.com/peedasaur?tab=repositories"
-              target="_blank"
-              class="btn-view-all"
-              >View All Projects <i class="bx bx-right-arrow-alt"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-
-      <div class="sep"></div>
-
-      <!-- ══════ CERTIFICATES ══════ -->
-      <section id="certificates" class="section">
-        <div class="wrap">
-          <h2 class="sec-h2 reveal-up">Certificates</h2>
-          <div class="cert-grid">
-            <!-- Cert 1 -->
-            <div class="ccard reveal-up delay1">
-              <div class="ccard-top-img">
-                <img src="assets/certs/cert1.png" alt="Master Gen AI" />
-                <div class="ccard-shimmer"></div>
-              </div>
-              <div class="ccard-body">
-                <h3>Master Generative AI &amp; Tools</h3>
-                <p>Infosys Springboard</p>
-                <div class="ccard-foot">
-                  <span class="mono sm">August 2025</span>
-                  <a
-                    href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view"
-                    target="_blank"
-                    class="mono sm"
-                    >View <i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-              </div>
+              <span class="pcard-tag mono"
+                style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)">Productivity</span>
             </div>
-
-            <!-- Cert 2 -->
-            <div class="ccard reveal-up delay2">
-              <div class="ccard-top-img">
-                <img
-                  src="assets/certs/cert2.png"
-                  alt="ChatGPT-4 Prompt Engineering"
-                />
-              </div>
-              <div class="ccard-body">
-                <h3>ChatGPT-4 Prompt Engineering</h3>
-                <p>Infosys Springboard</p>
-                <div class="ccard-foot">
-                  <span class="mono sm">August 2025</span>
-                  <a
-                    href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view"
-                    target="_blank"
-                    class="mono sm"
-                    >View <i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Cert 3 -->
-            <div class="ccard reveal-up delay3">
-              <div class="ccard-top-img">
-                <img src="assets/certs/cert3.png" alt="Computational Theory" />
-              </div>
-              <div class="ccard-body">
-                <h3>Computational Theory &amp; Finite Automata</h3>
-                <p>Infosys Springboard</p>
-                <div class="ccard-foot">
-                  <span class="mono sm">August 2025</span>
-                  <a
-                    href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view"
-                    target="_blank"
-                    class="mono sm"
-                    >View <i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Cert 4 -->
-            <div class="ccard reveal-up delay1">
-              <div class="ccard-top-img">
-                <img src="assets/certs/cert4.png" alt="OOP using C++" />
-              </div>
-              <div class="ccard-body">
-                <h3>Object Oriented Programming in C++</h3>
-                <p>Lovely Professional University</p>
-                <div class="ccard-foot">
-                  <span class="mono sm">August 2025</span>
-                  <a
-                    href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view"
-                    target="_blank"
-                    class="mono sm"
-                    >View <i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Cert 5 -->
-            <div class="ccard reveal-up delay2">
-              <div class="ccard-top-img">
-                <img src="assets/certs/cert5.png" alt="Build Gen AI Apps" />
-              </div>
-              <div class="ccard-body">
-                <h3>Build Generative AI Apps</h3>
-                <p>Infosys Springboard</p>
-                <div class="ccard-foot">
-                  <span class="mono sm">August 2025</span>
-                  <a
-                    href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view"
-                    target="_blank"
-                    class="mono sm"
-                    >View <i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Cert 6 -->
-            <div class="ccard reveal-up delay3">
-              <div class="ccard-top-img">
-                <img
-                  src="assets/certs/cert6.png"
-                  alt="GeeksforGeeks API Bootcamp"
-                />
-              </div>
-              <div class="ccard-body">
-                <h3>GeeksforGeeks API Bootcamp</h3>
-                <p>Sponsored by Postman</p>
-                <div class="ccard-foot">
-                  <span class="mono sm">Summer Edition</span>
-                  <a
-                    href="https://drive.google.com/file/d/167OxogRI0UEAzKZBIq7YD70bRlMe7Dh_/view"
-                    target="_blank"
-                    class="mono sm"
-                    >View <i class="bx bx-link-external"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="sep"></div>
-
-      <!-- ══════ EDUCATION ══════ -->
-      <section id="education" class="section">
-        <div class="wrap">
-          <h2 class="sec-h2 reveal-up">Education</h2>
-          <div class="edu-list">
-            <!-- B.Tech -->
-            <div class="edu-card reveal-up delay1 float-hover">
-              <div class="edu-header">
-                <h3 class="edu-inst">Lovely Professional University</h3>
-                <span class="edu-loc">Phagwara, Punjab</span>
-              </div>
-              <div class="edu-body">
-                <p class="edu-degree">
-                  Bachelor of Technology - Computer Science and Engineering;
-                  <strong class="edu-hl">CGPA: 6.65</strong>
-                </p>
-                <span class="edu-date">Since August 2023</span>
-              </div>
-            </div>
-            <!-- 12th -->
-            <div class="edu-card reveal-up delay2 float-hover">
-              <div class="edu-header">
-                <h3 class="edu-inst">Holy cross public school</h3>
-                <span class="edu-loc">Muzaffarpur, Bihar</span>
-              </div>
-              <div class="edu-body">
-                <p class="edu-degree">
-                  Intermediate; <strong class="edu-hl">Percentage: 65%</strong>
-                </p>
-                <span class="edu-date">April 2021 - March 2023</span>
-              </div>
-            </div>
-            <!-- 10th -->
-            <div class="edu-card reveal-up delay3 float-hover">
-              <div class="edu-header">
-                <h3 class="edu-inst">Shanti Niketan school</h3>
-                <span class="edu-loc">Muzaffarpur, Bihar</span>
-              </div>
-              <div class="edu-body">
-                <p class="edu-degree">
-                  Matriculation; <strong class="edu-hl">Percentage: 71%</strong>
-                </p>
-                <span class="edu-date">April 2020 - March 2021</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="sep"></div>
-
-      <!-- ══════ CONTACT ══════ -->
-      <section id="contact" class="section">
-        <div class="wrap">
-          <div class="contact-top reveal-up">
-            <div>
-              <p class="sec-eyebrow">
-                <span class="ey-line"></span>Let's Connect
+            <div class="pcard-body">
+              <h3>DETOX Extension</h3>
+              <p>
+                A productivity-focused Chrome extension designed to help users minimize digital distractions and stay focused while browsing.
               </p>
-              <h2 class="sec-h2">Say Hello</h2>
+              <div class="pcard-stack">
+                <span>JavaScript</span><span>Chrome API</span><span>Tool</span>
+              </div>
             </div>
-            <p class="contact-tagline reveal-up delay1">
-              Open to internships, projects, and exciting collaborations. Don't
-              hesitate — drop a message.
+          </article>
+
+          <!-- 2. public-safety-advisor -->
+          <article class="pcard reveal-up delay2" data-tilt>
+            <div class="pcard-img">
+              <img src="assets/projects/proj2.png" alt="Public Safety Advisor"
+                style="width: 100%; height: 100%; object-fit: cover" />
+              <div class="pcard-overlay">
+                <a href="https://github.com/peedasaur/public-safety-advisor" target="_blank" class="pca"><i
+                    class="bx bxl-github"></i> Code</a>
+              </div>
+              <span class="pcard-tag mono" style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)">AI
+                Chatbot</span>
+            </div>
+            <div class="pcard-body">
+              <h3>Public Safety Advisor</h3>
+              <p>
+                A simple chatbot built to give safety tips, report incidents,
+                and advice to the public.
+              </p>
+              <div class="pcard-stack">
+                <span>Python</span><span>AI</span><span>Chatbot</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Doctor-appointment -->
+          <article class="pcard reveal-up delay3" data-tilt>
+            <div class="pcard-img">
+              <img src="assets/projects/proj5.jpg" alt="CarePulse Doctor Appointment" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                  " />
+              <div class="pcard-overlay">
+                <a href="https://github.com/peedasaur/Doctor-appointment" target="_blank" class="pca"><i
+                    class="bx bxl-github"></i> Code</a>
+              </div>
+              <span class="pcard-tag mono" style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)">Health</span>
+            </div>
+            <div class="pcard-body">
+              <h3>Doctor Appointments</h3>
+              <p>
+                Medical appointment management system to seamlessly find and
+                book expert healthcare professionals.
+              </p>
+              <div class="pcard-stack">
+                <span>React</span><span>Next.js</span><span>Node.js</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Movie-Booking -->
+          <article class="pcard reveal-up delay1" data-tilt>
+            <div class="pcard-img">
+              <img src="assets/projects/proj4.png" alt="Cine Book"
+                style="width: 100%; height: 100%; object-fit: cover" />
+              <div class="pcard-overlay">
+                <a href="https://github.com/peedasaur/Movie-Booking" target="_blank" class="pca"><i
+                    class="bx bxl-github"></i> Code</a>
+              </div>
+              <span class="pcard-tag mono"
+                style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)">Entertainment</span>
+            </div>
+            <div class="pcard-body">
+              <h3>CineBook Movies</h3>
+              <p>
+                Sleek ticket booking interface for movies with seat selection
+                and beautiful modern UI.
+              </p>
+              <div class="pcard-stack">
+                <span>React</span><span>Vite</span><span>UI/UX</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Sand-simulator -->
+          <article class="pcard reveal-up delay2" data-tilt>
+            <div class="pcard-img">
+              <img src="assets/projects/proj1.png" alt="Sand Simulator"
+                style="width: 100%; height: 100%; object-fit: cover" />
+              <div class="pcard-overlay">
+                <a href="https://github.com/peedasaur/Sand-simulator" target="_blank" class="pca"><i
+                    class="bx bxl-github"></i> Code</a>
+              </div>
+              <span class="pcard-tag mono" style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)">Physics
+                Engine</span>
+            </div>
+            <div class="pcard-body">
+              <h3>Sand Simulator</h3>
+              <p>
+                A minimal website using OpenGL to accurately simulate
+                interactive sand physics in the browser.
+              </p>
+              <div class="pcard-stack">
+                <span>JavaScript</span><span>WebGL</span><span>Canvas</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. NEON-PONG-Unity-Game- -->
+          <article class="pcard reveal-up delay3" data-tilt>
+            <div class="pcard-img">
+              <img src="assets/projects/proj3.png" alt="NEON PONG"
+                style="width: 100%; height: 100%; object-fit: cover" />
+              <div class="pcard-overlay">
+                <a href="https://github.com/peedasaur/NEON-PONG-Unity-Game-" target="_blank" class="pca"><i
+                    class="bx bxl-github"></i> Code</a>
+              </div>
+              <span class="pcard-tag mono" style="color: #fff; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9)">Game</span>
+            </div>
+            <div class="pcard-body">
+              <h3>Neon Pong</h3>
+              <p>
+                Modern arcade Pong clone built with Unity Engine featuring
+                vivid post-processing visual fx.
+              </p>
+              <div class="pcard-stack">
+                <span>Unity</span><span>C#</span><span>Gamedev</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="view-more-wrap reveal-up delay4" style="text-align: center; margin-top: 50px">
+          <a href="https://github.com/peedasaur?tab=repositories" target="_blank" class="btn-view-all">View All Projects
+            <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ══════ CERTIFICATES ══════ -->
+    <section id="certificates" class="section">
+      <div class="wrap">
+        <h2 class="sec-h2 reveal-up">Certificates</h2>
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="ccard reveal-up delay1">
+            <div class="ccard-top-img">
+              <img src="assets/certs/cert1.png" alt="Master Gen AI" />
+              <div class="ccard-shimmer"></div>
+            </div>
+            <div class="ccard-body">
+              <h3>Master Generative AI &amp; Tools</h3>
+              <p>Infosys Springboard</p>
+              <div class="ccard-foot">
+                <span class="mono sm">August 2025</span>
+                <a href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view" target="_blank"
+                  class="mono sm">View <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="ccard reveal-up delay2">
+            <div class="ccard-top-img">
+              <img src="assets/certs/cert2.png" alt="ChatGPT-4 Prompt Engineering" />
+            </div>
+            <div class="ccard-body">
+              <h3>ChatGPT-4 Prompt Engineering</h3>
+              <p>Infosys Springboard</p>
+              <div class="ccard-foot">
+                <span class="mono sm">August 2025</span>
+                <a href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view" target="_blank"
+                  class="mono sm">View <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="ccard reveal-up delay3">
+            <div class="ccard-top-img">
+              <img src="assets/certs/cert3.png" alt="Computational Theory" />
+            </div>
+            <div class="ccard-body">
+              <h3>Computational Theory &amp; Finite Automata</h3>
+              <p>Infosys Springboard</p>
+              <div class="ccard-foot">
+                <span class="mono sm">August 2025</span>
+                <a href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view" target="_blank"
+                  class="mono sm">View <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="ccard reveal-up delay1">
+            <div class="ccard-top-img">
+              <img src="assets/certs/cert4.png" alt="OOP using C++" />
+            </div>
+            <div class="ccard-body">
+              <h3>Object Oriented Programming in C++</h3>
+              <p>Lovely Professional University</p>
+              <div class="ccard-foot">
+                <span class="mono sm">August 2025</span>
+                <a href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view" target="_blank"
+                  class="mono sm">View <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="ccard reveal-up delay2">
+            <div class="ccard-top-img">
+              <img src="assets/certs/cert5.png" alt="Build Gen AI Apps" />
+            </div>
+            <div class="ccard-body">
+              <h3>Build Generative AI Apps</h3>
+              <p>Infosys Springboard</p>
+              <div class="ccard-foot">
+                <span class="mono sm">August 2025</span>
+                <a href="https://drive.google.com/file/d/12wUiheFIdji1KLgoDz4BplRGUvlOzA8k/view" target="_blank"
+                  class="mono sm">View <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="ccard reveal-up delay3">
+            <div class="ccard-top-img">
+              <img src="assets/certs/cert6.png" alt="GeeksforGeeks API Bootcamp" />
+            </div>
+            <div class="ccard-body">
+              <h3>GeeksforGeeks API Bootcamp</h3>
+              <p>Sponsored by Postman</p>
+              <div class="ccard-foot">
+                <span class="mono sm">Summer Edition</span>
+                <a href="https://drive.google.com/file/d/167OxogRI0UEAzKZBIq7YD70bRlMe7Dh_/view" target="_blank"
+                  class="mono sm">View <i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ══════ EDUCATION ══════ -->
+    <section id="education" class="section">
+      <div class="wrap">
+        <h2 class="sec-h2 reveal-up">Education</h2>
+        <div class="edu-list">
+          <!-- B.Tech -->
+          <div class="edu-card reveal-up delay1 float-hover">
+            <div class="edu-header">
+              <h3 class="edu-inst">Lovely Professional University</h3>
+              <span class="edu-loc">Phagwara, Punjab</span>
+            </div>
+            <div class="edu-body">
+              <p class="edu-degree">
+                Bachelor of Technology - Computer Science and Engineering;
+                <strong class="edu-hl">CGPA: 6.65</strong>
+              </p>
+              <span class="edu-date">Since August 2023</span>
+            </div>
+          </div>
+          <!-- 12th -->
+          <div class="edu-card reveal-up delay2 float-hover">
+            <div class="edu-header">
+              <h3 class="edu-inst">Holy cross public school</h3>
+              <span class="edu-loc">Muzaffarpur, Bihar</span>
+            </div>
+            <div class="edu-body">
+              <p class="edu-degree">
+                Intermediate; <strong class="edu-hl">Percentage: 65%</strong>
+              </p>
+              <span class="edu-date">April 2021 - March 2023</span>
+            </div>
+          </div>
+          <!-- 10th -->
+          <div class="edu-card reveal-up delay3 float-hover">
+            <div class="edu-header">
+              <h3 class="edu-inst">Shanti Niketan school</h3>
+              <span class="edu-loc">Muzaffarpur, Bihar</span>
+            </div>
+            <div class="edu-body">
+              <p class="edu-degree">
+                Matriculation; <strong class="edu-hl">Percentage: 71%</strong>
+              </p>
+              <span class="edu-date">April 2020 - March 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <!-- ══════ CONTACT ══════ -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="contact-top reveal-up">
+          <div>
+            <p class="sec-eyebrow">
+              <span class="ey-line"></span>Let's Connect
             </p>
+            <h2 class="sec-h2">Say Hello</h2>
           </div>
+          <p class="contact-tagline reveal-up delay1">
+            Open to internships, projects, and exciting collaborations. Don't
+            hesitate — drop a message.
+          </p>
+        </div>
 
-          <!-- Contact info bar -->
-          <div class="cinfo-bar reveal-up delay1">
-            <a href="mailto:aditya.sharma7364@gmail.com" class="cinfo-card">
-              <div
-                class="cinfo-icon"
-                style="background: var(--faint); color: var(--c-blue)"
-              >
-                <i class="bx bx-envelope"></i>
-              </div>
-              <div>
-                <span class="cinfo-label">Email</span
-                ><strong>aditya.sharma7364@gmail.com</strong>
-              </div>
-            </a>
-            <a href="tel:+917079825061" class="cinfo-card">
-              <div
-                class="cinfo-icon"
-                style="background: var(--faint); color: var(--c-teal)"
-              >
-                <i class="bx bx-phone"></i>
-              </div>
-              <div>
-                <span class="cinfo-label">Phone</span
-                ><strong>+91 7079825061</strong>
-              </div>
-            </a>
-            <a
-              href="https://github.com/peedasaur"
-              target="_blank"
-              class="cinfo-card"
-            >
-              <div
-                class="cinfo-icon"
-                style="background: var(--faint); color: var(--c-violet)"
-              >
-                <i class="bx bxl-github"></i>
-              </div>
-              <div>
-                <span class="cinfo-label">GitHub</span
-                ><strong>peedasaur</strong>
-              </div>
-            </a>
-            <a
-              href="https://linkedin.com/in/aditya-sharma-501210341"
-              target="_blank"
-              class="cinfo-card"
-            >
-              <div
-                class="cinfo-icon"
-                style="background: var(--faint); color: var(--c-blue)"
-              >
-                <i class="bx bxl-linkedin"></i>
-              </div>
-              <div>
-                <span class="cinfo-label">LinkedIn</span
-                ><strong>aditya-sharma-501210341</strong>
-              </div>
-            </a>
-          </div>
+        <!-- Contact info bar -->
+        <div class="cinfo-bar reveal-up delay1">
+          <a href="mailto:aditya.sharma7364@gmail.com" class="cinfo-card">
+            <div class="cinfo-icon" style="background: var(--faint); color: var(--c-blue)">
+              <i class="bx bx-envelope"></i>
+            </div>
+            <div>
+              <span class="cinfo-label">Email</span><strong>aditya.sharma7364@gmail.com</strong>
+            </div>
+          </a>
+          <a href="tel:+917079825061" class="cinfo-card">
+            <div class="cinfo-icon" style="background: var(--faint); color: var(--c-teal)">
+              <i class="bx bx-phone"></i>
+            </div>
+            <div>
+              <span class="cinfo-label">Phone</span><strong>+91 7079825061</strong>
+            </div>
+          </a>
+          <a href="https://github.com/peedasaur" target="_blank" class="cinfo-card">
+            <div class="cinfo-icon" style="background: var(--faint); color: var(--c-violet)">
+              <i class="bx bxl-github"></i>
+            </div>
+            <div>
+              <span class="cinfo-label">GitHub</span><strong>peedasaur</strong>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/aditya-sharma-501210341" target="_blank" class="cinfo-card">
+            <div class="cinfo-icon" style="background: var(--faint); color: var(--c-blue)">
+              <i class="bx bxl-linkedin"></i>
+            </div>
+            <div>
+              <span class="cinfo-label">LinkedIn</span><strong>aditya-sharma-501210341</strong>
+            </div>
+          </a>
+        </div>
 
-          <!-- Form -->
-          <div class="contact-form-panel reveal-up delay2">
-            <form class="cform" onsubmit="event.preventDefault()">
-              <div class="cform-row">
-                <div class="form-group">
-                  <label><i class="bx bx-user"></i> Name</label>
-                  <input type="text" placeholder="Your full name" required />
-                </div>
-                <div class="form-group">
-                  <label><i class="bx bx-envelope"></i> Email</label>
-                  <input type="email" placeholder="you@email.com" required />
-                </div>
+        <div class="contact-form-panel reveal-up delay2">
+          <form class="cform" onsubmit="event.preventDefault()">
+            <div class="cform-row">
+              <div class="form-group">
+                <label><i class="bx bx-user"></i> Name</label>
+                <input type="text" placeholder="Your full name" required />
               </div>
               <div class="form-group">
-                <label><i class="bx bx-message-detail"></i> Message</label>
-                <textarea
-                  placeholder="Tell me about your project or idea..."
-                  rows="5"
-                  required
-                ></textarea>
+                <label><i class="bx bx-envelope"></i> Email</label>
+                <input type="email" placeholder="you@email.com" required />
               </div>
-              <div class="cform-footer">
-                <span class="avail-badge"
-                  ><span class="avail-dot"></span>Currently available</span
-                >
-                <button type="submit" class="btn-fill big form-btn">
-                  Send Message <i class="bx bx-send"></i>
-                </button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="form-group">
+              <label><i class="bx bx-message-detail"></i> Message</label>
+              <textarea placeholder="Tell me about your project or idea..." rows="5" required></textarea>
+            </div>
+            <div class="cform-footer">
+              <span class="avail-badge"><span class="avail-dot"></span>Currently available</span>
+              <button type="submit" class="btn-fill big form-btn">
+                Send Message <i class="bx bx-send"></i>
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrap footer-inner">
-        <span class="mono sm" style="text-align: center; width: 100%"
-          >© 2026 Aditya Sharma</span
-        >
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span class="mono sm" style="text-align: center; width: 100%">© 2026 Aditya Sharma</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
